@@ -1,15 +1,21 @@
-A security system that scans video footage to recognize and identify specific faces in a crowd.;1;1
-A webcam that captures and transmits a video stream for a live conference call.;1;0
-A system in a car that visually identifies and categorizes objects on the road, such as pedestrians, other vehicles, and traffic signals.;1;1
-An online shopping site that analyzes your browsing history and past purchases to suggest new products you might like.;2;1
-Using a spreadsheet formula to calculate the average of a column of numbers.;2;0
-A banking system that monitors transaction data in real-time to detect unusual patterns and flag potential fraud.;2;1
-A voice assistant on your phone that processes your spoken request to "set a timer for 10 minutes" and performs the action.;3;1
-A digital audio recorder that captures your voice and saves it as an MP3 file without any further processing.;3;0
-A feature on your phone that converts your spoken words into a written text message.;3;1
-An online support chat that automatically interprets your typed questions and provides relevant answers from its knowledge base.;4;1
-An email service that automatically reads incoming messages and moves suspected junk mail to a spam folder.;4;1
-A simple text editor application that allows you to type and save plain text documents.;4;0
-A robotic vacuum cleaner that maps the layout of a room and adjusts its cleaning route when it encounters a new piece of furniture.;5;1
-A robot on an assembly line that performs a single, repetitive task, such as tightening a specific bolt on every unit that passes.;5;0
-An opponent in a video game that observes your playing style and changes its strategy to better challenge you.;5;1
+Turvajärjestelmä, joka analysoi videomateriaalia tunnistaakseen tiettyjä kasvoja ihmisjoukosta.;1;1
+Web-kamera, joka kaappaa ja lähettää videokuvaa suoraa verkkokokousta varten.;1;0
+Autossa oleva järjestelmä, joka visuaalisesti tunnistaa ja luokittelee tiellä olevia kohteita, kuten jalankulkijoita, muita ajoneuvoja ja liikennevaloja.;1;1
+Verkkokauppa, joka analysoi selaushistoriaasi ja aiempia ostoksiasi ehdottaakseen sinulle uusia tuotteita.;2;1
+Taulukkolaskentaohjelman kaavan käyttäminen lukusarakkeen keskiarvon laskemiseen.;2;0
+Pankkijärjestelmä, joka valvoo maksutapahtumia reaaliajassa tunnistaakseen poikkeavia malleja ja ilmoittaakseen mahdollisista petoksista.;2;1
+Puhelimen ääniavustaja, joka käsittelee puhutun pyyntösi "aseta ajastin 10 minuuttiin" ja suorittaa toiminnon.;3;1
+Digitaalinen sanelukone, joka nauhoittaa äänesi ja tallentaa sen MP3-tiedostona ilman jatkokäsittelyä.;3;0
+Puhelimen ominaisuus, joka muuntaa puhutut sanasi kirjoitetuksi tekstiksi.;3;1
+Online-asiakaspalvelu, joka tulkitsee automaattisesti kirjoittamasi kysymykset ja antaa niihin vastauksia tietokannastaan.;4;1
+Sähköpostipalvelu, joka automaattisesti lukee saapuvat viestit ja siirtää epäillyt roskapostit roskapostikansioon.;4;1
+Yksinkertainen tekstinkäsittelyohjelma, jolla voi kirjoittaa ja tallentaa tavallisia tekstitiedostoja.;4;0
+Robotti-imuri, joka kartoittaa huoneen pohjan ja mukauttaa siivousreittiään kohdatessaan uuden huonekalun.;5;1
+Kokoonpanolinjan robotti, joka suorittaa yhtä ja samaa toistuvaa tehtävää, kuten tietyn pultin kiristämisen jokaisessa ohikulkevassa yksikössä.;5;0
+Videopelin vastustaja, joka tarkkailee pelityyliäsi ja muuttaa strategiaansa haastaakseen sinut paremmin.;5;1
+Valokuvagallerian sovellus, joka automaattisesti ryhmittelee kuvia niissä esiintyvien henkilöiden perusteella.;1;1
+Verkkosivun kääntäjä, joka muuntaa tekstin välittömästi kielestä toiseen, esimerkiksi englannista suomeksi.;3;1
+Elokuvien suoratoistopalvelu, joka analysoi katseluhistoriaasi ja antaa sen perusteella henkilökohtaisia suosituksia.;2;1
+GPS-navigointisovellus, joka laskee matemaattisesti lyhimmän ajoreitin kahden pisteen välillä.;2;0
+Kuvankäsittelyohjelma, jolla voit manuaalisesti säätää valokuvan kirkkautta ja kontrastia liukusäätimillä.;1;0
+Älytermostaatti, joka oppii päivittäiset rutiinisi ja säätää kodin lämpötilaa automaattisesti säästääkseen energiaa.;5;1

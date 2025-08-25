@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentQuestion = currentRoundQuestions[questionsAnswered];
 
         // Update the UI
-        categoryText.textContent = "Is this AI?"//`Category: ${categoryMap[currentQuestion.category] || 'Unknown'}`;
         questionText.textContent = currentQuestion.question;
 
         questionCard.classList.remove('correct', 'incorrect');
@@ -108,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         progressBar.style.width = `${percentage}%`;
 
         // Update points counter
-        progressText.textContent = `Points: ${score}`;
+        progressText.textContent = `Pisteet: ${score}`;
     }
 
     /**

@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is AI?</title>
+    <title>Mitä on tekoäly?</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
 
     <div id="game-container">
-        <h1>What is AI?</h1>
-        <p class="subtitle">Answer 10 questions and see how well you understand AI!</p>
+        <h1>Mitä on tekoäly?</h1>
+        <p class="subtitle">Vastaa kymmeneen kysymykseen ja katso, kuinka hyvin ymmärrät tekoälyä!</p>
 
         <div id="progress-bar-container">
             <div id="progress-bar"></div>
         </div>
-        <p id="progress-text">Points: 0</p>
+        <p id="progress-text">Pisteet: 0</p>
 
         <div id="question-card">
-            <p id="category-text">Loading Category...</p>
-            <p id="question-text">Loading question, please wait...</p>
+            <p id="category-text">Onko tämä tekoäly?</p>
+            <p id="question-text">Ladataan kysymystä, ole hyvä ja odota...</p>
         </div>
 
         <div id="answer-buttons">
-            <button class="btn" id="true-btn" data-answer="1">AI</button>
-            <button class="btn" id="false-btn" data-answer="0">NOT AI</button>
+            <button class="btn" id="true-btn" data-answer="1">Tekoäly</button>
+            <button class="btn" id="false-btn" data-answer="0">Ei tekoäly</button>
         </div>
     </div>
 
     <div id="end-screen" class="hidden">
         <div class="end-content">
-            <h2 id="end-title">Round Over!</h2>
-            <p>Your final score is:</p>
+            <h2 id="end-title">Peli ohi!</h2>
+            <p>Lopullinen tulos:</p>
             <p id="final-score" class="score-display">0</p>
-            <p id="score-description">Let's see how you did...</p>
-            <button class="btn" id="play-again-btn">Play Again</button>
+            <p id="score-description">Katsotaanpa, miten suoriuduit...</p>
+            <button class="btn" id="play-again-btn">Pelaa uudelleen</button>
         </div>
     </div>
 
