@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitä on tekoäly?</title>
+    <title>Tekoälyhaaste</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
 
-    <div id="game-container">
+    <div id="start-screen">
+        <div class="start-content">
+            <h2>Tervetuloa testaamaan tietosi tekoälystä!</h2>
+            <div class="instructions">
+                <p>Testaa tietosi ja opi tunnistamaan, mitkä arjen esimerkit ovat tekoälyä ja mitkä eivät.</p>
+                <ul>
+                    <li>Peli sisältää kymmenen kysymystä.</li>
+                    <li>Lue kuvaus ja päättele, onko kyseessä tekoäly vai ei.</li>
+                    <li>Saat jokaisen vastauksen jälkeen välitöntä palautetta.</li>
+                    <li>Lue palaute ja siirry seuraavaan kysymykseen "Seuraava kysymys" -painikkeella.</li>
+                </ul>
+                <p>Onnea peliin!</p>
+            </div>
+            <button class="btn" id="start-btn">Aloita peli</button>
+        </div>
+    </div>
+
+    <div id="game-container" class="hidden">
         <h1>Mitä on tekoäly?</h1>
-        <p class="subtitle">Vastaa kymmeneen kysymykseen ja katso, kuinka hyvin ymmärrät tekoälyä!</p>
+        <p class="subtitle">Vastaa kymmeneen kysymykseen ja testaa, kuinka hyvin tunnet tekoälyn!</p>
 
         <div id="progress-bar-container">
             <div id="progress-bar"></div>
@@ -20,7 +37,7 @@
 
         <div id="question-card">
             <p id="category-text">Onko tämä tekoäly?</p>
-            <p id="question-text">Ladataan kysymystä, ole hyvä ja odota...</p>
+            <p id="question-text">Ladataan kysymystä, odota hetki...</p>
             <p id="feedback-text" class="hidden"></p>
         </div>
 
@@ -37,10 +54,10 @@
     <div id="end-screen" class="hidden">
         <div class="end-content">
             <h2 id="end-title">Kierros ohi!</h2>
-            <p>Pisteesi ovat:</p>
+            <p>Lopputuloksesi on:</p>
             <p id="final-score" class="score-display">0</p>
-            <p id="score-description">Katsotaanpa, miten suoriuduit...</p>
-            <button class="btn" id="play-again-btn">Pelaa uudelleen</button>
+            <p id="score-description">Katsotaanpa, miten meni...</p>
+            <button class="btn" id="play-again-btn">Pelaa uudestaan</button>
         </div>
     </div>
 
