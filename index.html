@@ -21,18 +21,23 @@
         <div id="question-card">
             <p id="category-text">Onko tämä tekoäly?</p>
             <p id="question-text">Ladataan kysymystä, ole hyvä ja odota...</p>
+            <p id="feedback-text" class="hidden"></p>
         </div>
 
         <div id="answer-buttons">
-            <button class="btn" id="true-btn" data-answer="1">Tekoäly</button>
-            <button class="btn" id="false-btn" data-answer="0">Ei tekoäly</button>
+            <button class="btn" id="ai-btn">Tekoäly</button>
+            <button class="btn" id="not-ai-btn">Ei tekoäly</button>
+        </div>
+
+        <div id="navigation-buttons" class="hidden">
+            <button class="btn" id="next-btn">Seuraava kysymys</button>
         </div>
     </div>
 
     <div id="end-screen" class="hidden">
         <div class="end-content">
-            <h2 id="end-title">Peli ohi!</h2>
-            <p>Lopullinen tulos:</p>
+            <h2 id="end-title">Kierros ohi!</h2>
+            <p>Pisteesi ovat:</p>
             <p id="final-score" class="score-display">0</p>
             <p id="score-description">Katsotaanpa, miten suoriuduit...</p>
             <button class="btn" id="play-again-btn">Pelaa uudelleen</button>

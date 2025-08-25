@@ -178,3 +178,25 @@ h1 {
     font-size: 1.1em;
     margin-bottom: 1.5em;
 }
+
+/* (Keep all your existing CSS and add/modify the following rules) */
+
+/* ... existing styles ... */
+
+/* In #question-card, add this new rule for the feedback text */
+#feedback-text {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #e0e0e0;
+    font-style: italic;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ... existing styles ... */
+
+.hidden {
+    display: none !important;
+}
+
+/* (No other changes are needed for the CSS) */
