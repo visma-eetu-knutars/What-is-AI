@@ -32,19 +32,26 @@ document.addEventListener('DOMContentLoaded', () => {
     let questionsAnswered = 0;
 
     const categoryMap = {
-        1: "Näkö",
-        2: "Päättely",
-        3: "Kuulo",
-        4: "Luku",
-        5: "Liike & Sopeutuminen"
+        1: "Yleinen",
+        2: "Taloudenhallinta"
     };
+
+    // Apufunktio listan elementtien sekoittamiseen
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
 
     // (fetchQuestions-funktio pysyy samana)
     async function fetchQuestions() {
         try {
             const response = await fetch('questions.csv');
             const data = await response.text();
-            allQuestions = data.trim().split('\n').map(line => {
+            
+            // 1. Lue ja jäsenna kaikki kysymykset tiedostosta
+            const parsedQuestions = data.trim().split('\n').map(line => {
                 const [question, category, answer, correctFeedback, incorrectFeedback] = line.split(';');
                 return {
                     question: question.trim(),
@@ -54,9 +61,30 @@ document.addEventListener('DOMContentLoaded', () => {
                     incorrectFeedback: incorrectFeedback.trim()
                 };
             }).filter(q => q.question && !isNaN(q.category) && !isNaN(q.answer));
+
+            // 2. Jaa kysymykset kategorioiden mukaan
+            const generalQuestions = parsedQuestions.filter(q => q.category === 1);
+            const financialQuestions = parsedQuestions.filter(q => q.category === 2);
+
+            // 3. Sekoita kummankin kategorian kysymyslistat satunnaiseen järjestykseen
+            shuffleArray(generalQuestions);
+            shuffleArray(financialQuestions);
+
+            // 4. Valitse 5 kysymystä kummastakin kategoriasta
+            const selectedGeneral = generalQuestions.slice(0, 5);
+            const selectedFinancial = financialQuestions.slice(0, 5);
+
+            // 5. Yhdistä valitut kysymykset ja sekoita lopullinen lista
+            let finalQuestions = [...selectedGeneral, ...selectedFinancial];
+            shuffleArray(finalQuestions);
+            
+            // Aseta globaali muuttuja sisältämään lopullisen 10 kysymyksen listan
+            allQuestions = finalQuestions;
+
         } catch (error) {
             console.error("Error fetching questions:", error);
-            questionText.textContent = "Kysymysten lataaminen epäonnistui.";
+            // Oletetaan, että questionText on määritelty muualla koodissa
+            // questionText.textContent = "Kysymysten lataaminen epäonnistui.";
         }
     }
     
